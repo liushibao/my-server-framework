@@ -1,0 +1,11 @@
+# __tests__
+# .vscode
+# node_modules
+# npm-debug.log
+# .env
+# uploads/*
+# src/*
+# coverage
+# jest.config.js
+# tsconfig.json
+# tslint.json

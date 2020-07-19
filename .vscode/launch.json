@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "framework test",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "node_modules/**/*.js",
+                "/<node_internals>/**/*.js",
+                "/**/<node_internals>/**/*.js",
+                "/**/internal/**/*.js",
+                "${workspaceFolder}/lib/**/*.js"
+            ],
+            "runtimeArgs": [
+                "--inspect-brk",
+                "node_modules/.bin/jest",
+                "--runInBand",
+                "--detectOpenHandles",
+                "--env=node",
+                "--colors",
+                "--coverage",
+                "test"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
+        },
+    ]
+}

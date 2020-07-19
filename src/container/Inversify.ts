@@ -1,0 +1,1 @@
+export { injectable, inject, interfaces } from 'inversify';
