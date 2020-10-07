@@ -15,6 +15,6 @@ A lot of problems with this framework were found in my first project. I have mad
 7) Remove the complicated test helper class, use jest directly instead. These test helpers helped little, complicated things more.
 
 # Updates on 2020-10-7
-8) Will make all class members public. Those originally supposed to be private or protected will rename to prefix an underscore. There is not a private modifier in javascript, not in es6, not even in es10, so it's pointless to mimic this, just prefix an underscore to remind the developers. This will make it easier to test and mock private members, save you from using <any> cast.
+8) Will make all class members public. Those originally supposed to be private or protected will rename to prefix an underscore. There is not a private modifier in javascript, not in es6, not even in es10, so it's pointless to mimic this, just prefix an underscore to remind the developers. This will make it easier to test and mock private members, save you from using <any> cast. Removing all class modifier key words also makes the code looks more concise. This is also similar to dart language.
   
-Above notes are very opinionated. MThere are certainly better ways to use the nodejs platform and the Typescript language. I am still learning about it.
+Above notes are very opinionated. There are certainly better ways to use the nodejs platform and the Typescript language. I am still learning about it.
